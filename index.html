@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:https="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Life Line</title>
+    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+<nav>
+    <label class="logo">Bringing The Future of Health Care</label>
+    <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<section class="about">
+    <div class="main">
+        <div class="about-text">
+            <h1>About Us</h1>
+            
+            <p>Health insurance cost prediction system. This website helps you to predict health insurance cost of the user with the help of the attributes given by the user. To know your health insurance cost click on get started.</p>
+            <button type="button" onclick="window.location.href='{{ url_for('health') }}';">Get Started</button>
+        </div>
+        <img src="https://images.moneycontrol.com/static-mcnews/2021/11/Health-insurance-770x433.jpg?impolicy=website&width=770&height=431">
+    </div>
+</section>
+
+</body>
+</html>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'roboto', sans-serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-image: url('https://www.statnews.com/wp-content/uploads/2021/04/AdobeStock_340574222-1-1600x900.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    nav {
+        font-family: 'roboto', sans-serif;
+        height: 70px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 0 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label.logo {
+        color: #03254c;
+        font-size: 35px;
+        line-height: 80px;
+        font-weight: bold;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+    }
+
+    .menu li {
+        margin-right: 20px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        color: #03254c;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s;
+    }
+
+    .menu a:hover {
+        color: #67032f;
+    }
+
+    .main {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .about {
+        padding: 20px; /* Add padding as needed */
+    }
+
+    .about-text {
+        max-width: 50%; /* Adjust as needed */
+        padding: 40px; /* Add padding to move the button down */
+        background-color: rgba(255, 255, 255, 0.8); /* Add background color to improve readability */
+    }
+
+    .about-text h1 {
+        text-align: left; /* Adjust alignment as needed */
+    }
+
+    .about-text h5 {
+        text-align: left; /* Adjust alignment as needed */
+    }
+
+    .about-text p {
+        text-align: left; /* Adjust alignment as needed */
+    }
+
+    button {
+        background: #67032f;
+        color: white;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 13px 30px;
+        border-radius: 30px;
+        transition: .4s;
+    }
+
+    button:hover {
+        background: #fff;
+        color: #67032f;
+        border: 2px solid #67032f;
+        cursor: pointer;
+    }
+
+    /* Rest of your CSS remains unchanged */
+</style>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ensure Complete Peace Of Mind</title>
+    <link href="healthstyle.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-image: url('https://i.pinimg.com/736x/23/e8/20/23e820216a84f32bc11077c20c0e3f0e.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            font-family: 'Bradley Hand, cursive';
+            height: 70px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        label.logo {
+            color: #03254c;
+            font-size: 35px;
+            line-height: 80px;
+            font-weight: bold;
+        }
+
+        .heading {
+            text-align: center;
+            padding-top: 100px;
+            padding-right: 30px;
+            color: #67032f;
+        }
+
+        button {
+            background: #67032f;
+            color: white;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 30px;
+            border-radius: 30px;
+            transition: .4s;
+        }
+
+        button:hover {
+            background: transparent;
+            border: 2px solid #67032f;
+            cursor: pointer;
+        }
+
+        form {
+            padding-left: 20px;
+            padding-right: 20px; /* Added right padding */
+            padding-top: 20px;
+            font-size: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .input {
+            height: 30px;
+            width: 100%;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+
+        .step-box {
+            max-width: 200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .parent {
+            display: flex;
+            justify-content: space-between; /* Added to align left and right */
+            flex-wrap: wrap; /* Added for responsiveness */
+        }
+
+        .child,
+        .child2 {
+            flex: 0 0 48%; /* Adjusted width */
+            padding: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .bt {
+            text-align: center;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label class="logo">Ensure Complete Peace Of Mind</label>
+    </nav>
+    <div class="heading">
+        <h1>PREDICTING HEALTH INSURANCE !</h1>
+    </div>
+    <form action='/predict' method="POST">
+        <div class="parent">
+            <div class="child">
+                <label>Age :</label><br><br>
+                <input type="number" name="age" placeholder="Age > 18" min="18" max="64" required="required" class="input"><br>
+            </div>
+            <div class="child">
+                <label>BMI :</label><br><br>
+                <input type="number" name="bmi" placeholder="BMI" required="required" class="input"><br>
+            </div>
+            <div class="child">
+                <label>Gender :</label><br><br>
+                <input type="number" name="gender" placeholder="0-Male / 1-Female" min="0" max="1" required="required"
+                    class="input"><br>
+            </div>
+            <div class="child2">
+                <label>Children :</label><br><br>
+                <input type="number" name="children" placeholder="0 for None" min="0" max="5" required="required" class="input"><br>
+            </div>
+            <div class="child2">
+                <label>Do you smoke ?</label><br><br>
+                <input type="number" name="smoke" placeholder="1-Yes / 0-No" max="1" min="0" required="required"
+                    class="input"><br>
+            </div>
+            <div class="child2">
+                <label>Region :</label><br><br>
+                <input type="number" name="region" placeholder="1-SW / 2-SE / 3-NW / 4-NE" max="4" min="1"
+                    required="required" class="input"><br>
+            </div>
+        </div>
+        <div class="bt">
+            <button type="submit">Predict</button>
+        </div>
+    </form>
+</body>
+
+</html>
